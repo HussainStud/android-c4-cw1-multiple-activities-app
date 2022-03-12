@@ -3,7 +3,10 @@ package com.tutorial.multiactivityallmight;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -15,6 +18,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         TextView txtNameView = findViewById(R.id.txtNameView);
         TextView txtAgeView = findViewById(R.id.txtAgeView);
+        Button btnContinueUrl = findViewById(R.id.btnContinueUrl);
 
 
         Bundle bundle = getIntent().getExtras();
@@ -23,5 +27,16 @@ public class MainActivity2 extends AppCompatActivity {
 
         txtNameView.setText(inputName);
         txtAgeView.setText(Integer.toString(inputAge));
+
+        btnContinueUrl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "https://heroaca.com";
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
     }
 }

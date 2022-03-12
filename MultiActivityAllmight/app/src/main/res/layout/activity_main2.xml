@@ -96,6 +96,19 @@
                 android:textColor="@color/tealest_blue"
                 android:fontFamily="@font/roboto_mediumitalic"
                 android:layout_marginTop="15dp"
+
+                />
+
+            <Button
+                android:id="@+id/btnContinueUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_radius"
+                android:text="Continue to the Anime Website"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
                 />
         </LinearLayout>
     </LinearLayout>
