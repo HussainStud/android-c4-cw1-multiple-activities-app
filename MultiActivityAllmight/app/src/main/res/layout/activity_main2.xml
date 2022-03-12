@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:orientation="vertical"
+    android:background="@drawable/all_might_bg"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#854D77FF"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The All might Hero Text"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textColor="@color/yellow_blue"
+            android:fontFamily="@font/roboto_blackitalic"
+            android:layout_marginTop="55dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:srcCompat="@drawable/unamed_allmight" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F2FA5A"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Congragulation new hero. Your information is:"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/teal_blue"
+                android:fontFamily="@font/roboto_mediumitalic"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Name: -"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/tealest_blue"
+                android:fontFamily="@font/roboto_mediumitalic"
+                android:layout_marginTop="25dp"
+                />
+            <TextView
+                android:id="@+id/txtNameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yush'Tah"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/tealest_blue"
+                android:fontFamily="@font/roboto_mediumitalic"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-Age: -"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/tealest_blue"
+                android:fontFamily="@font/roboto_mediumitalic"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:id="@+id/txtAgeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2450"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/tealest_blue"
+                android:fontFamily="@font/roboto_mediumitalic"
+                android:layout_marginTop="15dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/normal_blue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The All might Hero Text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/yellow_blue"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="55dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/roboto_blackitalic"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        app:srcCompat="@drawable/all_might" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/roboto_blackitalic"
+        android:text="-Enter the Following information, Please.-"
+        android:textColor="@color/yellow_blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/yellow_blue"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/normal_blue"
+        android:textColorHint="@color/teal_blue"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto_regular"
+        />
+
+    <EditText
+        android:id="@+id/edtAge"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/yellow_blue"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Age"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="@color/normal_blue"
+        android:textColorHint="@color/teal_blue"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/roboto_regular"/>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_radius"
+        android:text="Continue"
+        android:layout_marginTop="190dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        />
+
+
+</LinearLayout>
